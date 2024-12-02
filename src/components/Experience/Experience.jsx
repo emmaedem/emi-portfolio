@@ -1,14 +1,15 @@
-import styles from './Skills.module.css';
-import {getImageUrl} from "../../utils.js";
+import styles from './Experience.module.css';
+import { getImageUrl } from "../../utils.js";
+import skills from "../data/skills.json";
 
 
- const Skills = () => {
+ const Experience = () => {
     return (
-        <section className={styles.Container} id="Work">
-            <h2>Experince</h2>
+        <section className={styles.Container} id="Experience">
+            <h2>Experience</h2>
             <div>
                 <div>
-                    {Skills.map((skill, id) => {
+                    {skills.map((skill, id) => {
                         return (
                             <div key={id}>
                                 <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
@@ -16,7 +17,7 @@ import {getImageUrl} from "../../utils.js";
                             </div>
                         )
                     
-                })};
+                })}
                     
 
                 </div>
@@ -26,13 +27,6 @@ import {getImageUrl} from "../../utils.js";
 
             </div>
 
-            
-            
-            
-            
-
-
-            
     
            
       
@@ -41,4 +35,4 @@ import {getImageUrl} from "../../utils.js";
     )
 }
 
-export default Skills
+export default Experience

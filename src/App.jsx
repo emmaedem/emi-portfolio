@@ -3,9 +3,9 @@ import styles from './App.module.css'
 import About from './components/About/About'
 import Navbar from './components/Navbar/Navbar'
 import Profile from './components/Profile/profile';
-import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact'; 
+import Experience from './components/Experience/Experience';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <About />
         <Profile />
-        <Skills />
+        <Experience />
         <Projects />
         <Contact />
 
