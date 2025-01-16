@@ -5,7 +5,7 @@ import skills from "../data/skills.json";
 
  const Experience = () => {
     return (
-        <section className={styles.Container} id="Experience">
+        <section className={styles.Container} id="experience">
             <h2>Experience</h2>
             <div>
                 <div>
